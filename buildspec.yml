@@ -4,7 +4,7 @@ phases:
   install:
     commands:
       # Install dependencies needed for running tests
-      - pip install -r requirements/common.txt
+      - pip install -r requirements.txt
 
   pre_build:
     commands:
@@ -15,11 +15,8 @@ artifacts:
   type: zip
   files:
     - 'template.yml'
-    - 'ec2django/**/*'
-    - 'helloworld/**/*'
+    - 'todolist/**/*'
     - 'scripts/**/*'
     - 'appspec.yml'
     - 'manage.py'
-    - 'requirements/**/*'
     - 'requirements.txt'
-    - 'supervisord.conf'
